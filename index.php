@@ -21,7 +21,9 @@ if (isset($_POST['genres'])) {
 <?php
 if(isset($submit)) {
     echo "Folmulář byl odeslán";
-    var_dump($genres);
+    foreach($genres as $genre)
+    echo $genre. "<br>";
+
 } else { ?>
     <form action="index.php" method="post">
 
